@@ -1,0 +1,63 @@
+/* pages/home/leaderName/leaderName.wxss */
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0rpx 0rpx;
+  background-color: #ffffff;
+  font-size: 28rpx;
+  font-weight: 400;
+} 
+.mark {
+  color: white;
+  background-color: #C0002A;
+  padding: 16rpx 26rpx;
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: 600;
+  margin-top: 40rpx; 
+}
+.nameBox {
+  border: 4rpx solid black;
+  margin-top: 60rpx;
+}
+
+.nameBox .head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: #DDA1A2;
+}
+
+.nameBox .tr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.nameBox .name,
+.type,
+.tel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.nameBox .td,
+.th {
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border: 0.1rpx solid black;
+  text-align: center;
+  padding: 10rpx 10rpx;
+}

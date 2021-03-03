@@ -1,0 +1,32 @@
+<!--pages/hall/hall.wxml-->
+<!--pages/signUp/signUp.wxml-->
+<view class="container">
+
+  <view class="listBox">
+    <view class="itemBox" wx:for="{{ list }}" wx:key="index">
+      <!-- markBox -->
+      <view class="markBox">
+        <view class="mark">robotex</view> 
+      </view>
+      <!-- middleBox -->
+      <view class="middleBox">
+        <view class="name">{{ item.name }}</view>
+        <view class="title">{{ item.title }}</view>
+        <image class="image" src="{{ item.img }}" mode="widthFix">{{ item.img }}</image>
+      </view>
+      <!-- rightBox -->
+      <view class="rightBox">
+        <view class="time">{{ item.time }}</view> 
+        <view class="rbBox">
+          <image class="upbtImg" src="/assets/otherImg/upHig.png"></image>
+          <image class="messageImg" src="/assets/otherImg/massegeNomal.png"></image>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <view class="imageBox">
+    <image class="addImg" src="/assets/otherImg/hallAdd.png"></image>
+  </view>
+
+</view>

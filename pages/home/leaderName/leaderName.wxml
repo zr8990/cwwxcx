@@ -1,0 +1,34 @@
+<!--pages/home/leaderName/leaderName.wxml-->
+<view class="container">
+
+  <view class="mark" wx:if="{{ type == 1}}">组别：裁判A组</view>
+
+  <view class="nameBox">
+
+    <view class="head">
+      <view class="th" wx:for="{{ heads }}" wx:for-index="idx" wx:for-item="cell" wx:key="idx">{{ cell }}</view>
+    </view>
+
+    <view class="tr">
+      <view class="type" wx:if="{{ type == 0}}">
+        <view class="td" wx:for="{{ names.length}}" wx:for-index="idx" wx:for-item="cell" wx:key="idx">
+          {{ names[idx].type }}</view>
+      </view>
+      <view class="name">
+        <view class="td" wx:for="{{ names.length }}" wx:for-index="idx" wx:for-item="cell" wx:key="idx">
+          {{ names[idx].name }}</view>
+      </view>
+      <view class="status" wx:if="{{ type == 1}}">
+        <view class="td" wx:for="{{ names.length }}" wx:for-index="idx" wx:for-item="cell" wx:key="idx">
+          {{ names[idx].status }}</view>
+      </view>
+      <view class="tel">
+        <view class="td" wx:for="{{ names.length }}" wx:for-index="idx" wx:for-item="cell" wx:key="idx">
+          {{ names[idx].tel }}</view>
+      </view>
+
+    </view>
+
+  </view>
+
+</view>

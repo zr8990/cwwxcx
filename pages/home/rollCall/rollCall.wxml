@@ -1,0 +1,9 @@
+<!--pages/home/rollCall/rollCall.wxml-->
+<view class="container">
+  <view class="mark">裁判A组</view>
+  <view class="nameBox">
+    <view class="tr" wx:for="{{ thn }}" wx:key="index"> 
+      <view class="td" wx:for="{{ 3 }}" wx:for-index="idx" wx:for-item="cell">{{ names[index*3+idx] }}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+<!--pages/home/report/report.wxml--> 
+<view class="container"> 
+ 
+  <view class="taskDescriptionBox"> 
+    <textarea class="inputDescript"></textarea>
+  </view>
+  <view class="sureButton" catchtap="onConfirmClick">提 交</view>
+</view>
+

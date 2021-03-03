@@ -1,0 +1,23 @@
+<view class="container"> 
+
+  <!-- list -->
+  <view class="cellsBox">
+    <view class="cell" wx:for="{{ list }}" wx:key="index">
+      <view class="title">{{ item.title }}</view>
+
+      <view class="cellItemsBox" wx:if="{{ item.type == '1' }}">
+        <view class="cellItem" wx:for="{{ item.selects }}" wx:for-item="cell"  wx:for-index="idx" wx:key="idx">
+          <icon class="icon" type="{{ (idx == item.selected) ? 'success' : 'circle' }}"
+            color="{{ (idx == item.selected) ? '#C0002A' : '#C9C9C9' }}" catchtap="onSelctClick" data-index="{{ index }}" data-idx="{{ idx }}"></icon>
+          <view class="content" >{{ cell }}</view>
+        </view>
+      </view>
+
+      <view class="cellItemsBox" wx:elif="{{ item.type == '2' }}">
+        <textarea class="textarea" maxlength="200" placeholder="200字以内。。。"></textarea>
+      </view>
+    </view>
+  </view>
+  <!-- confirm -->
+  <view class="sureButton">提交</view>
+</view>

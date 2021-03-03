@@ -1,0 +1,162 @@
+/* pages/home/home.wxss */
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0rpx 0rpx;
+  background-color: #F7F7F7;
+  font-size: 26rpx;
+  font-weight: 450;
+}
+
+.imgBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: white;
+  width: 94%;
+  margin: 20rpx 20rpx;
+  padding: 30rpx 20rpx;
+  border-radius: 10rpx;
+}
+
+.imgBox .flash {
+  width: 96%;
+}
+
+/* quickBtBox */
+.quickBtBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  background-color: white;
+  width: 94%;
+  margin: 20rpx 20rpx;
+  padding: 30rpx 20rpx;
+  border-radius: 10rpx;
+}
+
+.quickBtBox .signInBox,
+.myTaskBox,
+.RDouBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+} 
+.quickBtBox .signIn,
+.myTask,
+.RDou {
+  margin-top: 10rpx;
+  line-height: 30rpx;
+}
+.quickBtBox .signInIcon,
+.myTaskIcon,
+.RDouIcon {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+/* personalBox */
+.personalBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+
+  padding: 20rpx 20rpx;
+  border-radius: 10rpx;
+  margin: 20rpx 30rpx;
+  background-color: white;
+  width: 94%;
+}
+ 
+.personalBox .icon {
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 60rpx;
+  background-color: #C0002A;
+  margin: 20rpx 30rpx;
+  padding: 10rpx 10rpx;
+  color: white;
+}
+
+.personalBox .inforBox {
+  color: #626262;
+  padding: 20rpx 20rpx;
+}
+
+.inforBox .myInformation {
+  margin-top: 20rpx;
+  background-color: #C0002A;
+  border-radius: 10rpx;
+  color: white;
+  padding: 10rpx 10rpx;
+  text-align: center;
+  font-size: 26rpx;
+  font-weight: 300;
+  max-width: 60%;
+}
+
+/* sectionBox */
+.sectionBox {
+  /* padding: 20rpx 40rpx;  */
+  margin-top: 20rpx;
+  width: 94%;
+}
+
+.sectionBox .sectionTitle {
+  padding: 10rpx 30rpx;
+  font-size: 32rpx;
+  font-weight: 800;
+  color: #C0002A;
+}
+
+/* serverceBox */
+.serverceBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20rpx 20rpx;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  background-color: white;
+  width: 94%;
+}
+
+.serverceBox .rightBox {
+  padding: 20rpx 20rpx;
+}
+
+.serverceBox .img {
+  width: 50%;
+}
+
+.serverceBox .rightBox .type {
+  padding: 10rpx 0rpx;
+  font-weight: 500;
+}
+
+.serverceBox .rightBox .serverce {
+  margin-top: 20rpx;
+  background-color: #C0002A;
+  border-radius: 10rpx;
+  color: white;
+  padding: 10rpx 10rpx;
+  text-align: center;
+  font-weight: 600;
+  max-width: 50%;
+}

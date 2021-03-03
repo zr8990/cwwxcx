@@ -1,0 +1,126 @@
+/* pages/home/myTask/myTask.wxss */
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0rpx 0rpx;
+  background-color: #F7F7F7;
+  font-size: 26rpx;
+  font-weight: 450;
+}
+
+/* 1.topBox */
+.topBox {
+  background-color: white;
+  width: 85%;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  padding: 20rpx 0rpx;
+  border: 1rpx solid #C0002A;
+}
+.topBox .groupBox ,.postBox ,.numberBox ,.gradeLeaderBox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box; 
+  margin: 20rpx 60rpx;
+  border-bottom: 1rpx solid #C0002A;
+  color: #626262;  
+}
+.topBox .group {
+  margin: 10rpx 0rpx;
+}
+.topBox .content {
+  margin: 10rpx 0rpx;
+}
+.topBox .rollCall {
+  margin: 10rpx 6rpx;
+  padding: 6rpx 10rpx;
+  border-radius: 6rpx; 
+  background-color: #C0002A; 
+  color: white;
+  text-align: center; 
+  max-width: 18%;
+  min-width: 12%;
+} 
+ 
+/* <!-- 2.middleBox --> */
+.middleBox {
+  width: 85%; 
+}
+.middleBox .leaderBox ,.memberBox ,.tasksBox ,.teamNoBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box; 
+  background-color: white;
+  margin-top: 20rpx;
+  border-radius: 8rpx;
+}
+.middleBox .type {
+  margin: 20rpx 30rpx;
+  border-radius: 10rpx; 
+  background-color: #DDA1A2;  
+  padding: 10rpx 10rpx;
+  text-align: center;
+  font-weight: 600;
+  max-width: 50%;
+  min-width: 40%;
+}
+.middleBox .status {
+  color: #626262;
+  margin: 20rpx 30rpx;
+} 
+
+/* <!-- 3.bottomBox --> */
+.bottomBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box; 
+  width: 85%; 
+  margin: 30rpx 0rpx;
+  background-color: white;  
+  border-radius: 10rpx;
+  padding: 30rpx 0rpx 60rpx 0rpx;
+}
+.bottomBox .directories ,.checkWork ,.report {
+  margin-top: 30rpx;
+  border-radius: 10rpx; 
+  background-color: #C0002A; 
+  color: white;
+  padding: 10rpx 10rpx;
+  text-align: center;
+  font-weight: 600;
+  max-width: 50%;
+  min-width: 35%;
+}  
+/* <!-- 4.任务描述 --> */
+.taskDescriptionBox { 
+  width: 85%; 
+  margin: 30rpx 0rpx;
+}
+.taskDescriptionBox .taskDescript {
+  margin: 30rpx 0rpx; 
+  background-color: #C0002A; 
+  color: white;
+  padding: 10rpx 10rpx;
+  text-align: center;
+  font-weight: 600; 
+  width: 150rpx;
+}
+.taskDescriptionBox .inputDescript {
+  background-color: white; 
+  border: 1rpx solid #C0002A;
+  width: 96%;
+  height: 200rpx;
+  margin: 20rpx 0rpx;
+  padding: 10rpx 10rpx;
+} 

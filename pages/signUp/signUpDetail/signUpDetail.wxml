@@ -1,0 +1,41 @@
+<view class="container">
+  <!-- header -->
+  <view class="headerBox">
+    <view class="title">第二十届Robotex世界机器人大会长三角选拔赛</view>
+    <image class="image"
+      src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3432936553,706692562&fm=26&gp=0.jpg"
+      mode="widthFix"></image>
+    <view class="introduceBox">
+      <view class="introduce">赛事活动简介：</view>
+      <view class="clearBox"></view>
+    </view>
+    <view class="introduceContent">赛事活动简介赛事活动简介赛事活动简介赛事活动简介赛事活动简介赛事活动简介赛事活动简介</view>
+  </view>
+  <!-- select -->
+  <view class="selectSectionBox">
+    <view class="tips">意向岗位</view>
+    <van-dropdown-menu class="selectbutton">
+      <van-dropdown-item value="{{ 0 }}" bind:change="valChange" options="{{ option1 }}" />
+    </van-dropdown-menu>
+  </view>
+  <!-- list -->
+  <view class="cellsBox">
+    <view class="cell" wx:for="{{ list }}" wx:key="index">
+      <view class="title">{{ item.title }}</view>
+
+      <view class="cellItemsBox" wx:if="{{ item.type == '1' }}">
+        <view class="cellItem" wx:for="{{ item.selects }}" wx:for-item="cell"  wx:for-index="idx" wx:key="idx">
+          <icon class="icon" type="{{ (idx == item.selected) ? 'success' : 'circle' }}"
+            color="{{ (idx == item.selected) ? '#C0002A' : '#C9C9C9' }}" catchtap="onSelctClick" data-index="{{ index }}" data-idx="{{ idx }}"></icon>
+          <view class="content" >{{ cell }}</view>
+        </view>
+      </view>
+
+      <view class="cellItemsBox" wx:elif="{{ item.type == '2' }}">
+        <input class="cellInput" placeholder="请输入。。。"></input>
+      </view>
+    </view>
+  </view>
+  <!-- confirm -->
+  <view class="sureButton">提交</view>
+</view>

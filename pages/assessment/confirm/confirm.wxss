@@ -1,0 +1,64 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rpx 0rpx;
+  box-sizing: border-box;
+  background-color: white;
+  font-size: 26rpx;
+  font-weight: 450;
+} 
+
+.cellsBox {
+  margin: 20rpx 40rpx;
+  width: 100%;
+}
+
+.cellsBox .title {
+  font-size: 26rpx;
+  font-weight: 450;
+  margin: 20rpx 40rpx;
+}
+
+.cellsBox .cellItemsBox {
+  color: grey;  
+}
+
+.cellsBox .textarea {
+  padding: 10rpx 10rpx;
+  margin: 30rpx 40rpx;
+  border-bottom: 1rpx solid #626262;
+  height: 200rpx;
+  border: 1rpx solid lightgrey;
+}
+
+.cellsBox .cellItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  color: #626262;
+  font-size: 26rpx;
+  font-weight: 450;
+  padding-left: 80rpx;
+}
+.cellsBox .cellItem .icon {
+  margin-left: 30rpx;
+}
+.cellsBox .cellItem .content {
+  margin: 20rpx 20rpx;
+}
+
+.sureButton {
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  border-radius: 10rpx;
+  background-color: #C0002A;
+  width: 30%;
+  color: white;
+  text-align: center;
+  padding: 10rpx 20rpx;
+}

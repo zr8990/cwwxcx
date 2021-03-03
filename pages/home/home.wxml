@@ -1,0 +1,52 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+
+  <view class="imgBox">
+    <image class="flash" mode="widthFix"
+      src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2659736568,2684110751&fm=26&gp=0.jpg"></image>
+  </view>
+  <view class="quickBtBox">
+    <view class="signInBox" catchtap="onSignInClick">
+      <image class="signInIcon" src="/assets/tabbar/signInHig.png"></image>
+      <view class="signIn">签到</view>
+    </view>
+    <view class="myTaskBox" catchtap="onMyTaskClick">
+      <image class="myTaskIcon" src="/assets/tabbar/myTask.png"></image>
+      <view class="myTask">我的任务</view>
+    </view>
+    <view class="RDouBox" catchtap="onRDouClick">
+      <image class="RDouIcon" src="/assets/tabbar/exchangeHig.png"></image>
+      <view class="RDou">R豆兑换</view>
+    </view>
+  </view>
+  <view class="personalBox">
+    <view class="iconBox">
+      <view class="icon" catchtap="onMyIconClick">robotex</view>
+    </view>
+
+    <view class="inforBox">
+      <view class="name">姓名：</view>
+      <view class="Rdou">我的R豆：</view>
+      <view class="number">志愿服务次数：</view>
+      <view class="time">志愿服务时长：</view>
+      <view class="code">robotex志愿者编号：</view>
+      <view class="myInformation" catchtap="onMyInformationClick">我的信息</view>
+    </view>
+
+  </view>
+
+  <view class="sectionBox">
+    <view class="sectionTitle">robotex志愿者之旅</view>
+  </view>
+
+  <view class="serverceBox">
+    <image class="img" mode="widthFix"
+      src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3432936553,706692562&fm=26&gp=0.jpg"></image>
+    <view class="rightBox">
+      <view class="title">第二世界robotex世界机器人大会长三角选拔赛</view>
+      <view class="type">裁判组</view>
+      <view class="serverce" catchtap="onServerceClick">正在服务</view>
+    </view>
+  </view>
+
+</view>

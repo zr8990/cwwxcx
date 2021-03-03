@@ -1,0 +1,55 @@
+<!--pages/home/myTask/myTask.wxml-->
+<view class="container">
+<!-- 1.topBox -->
+  <view class="topBox">
+    <view class="groupBox">
+      <view class="group">组别</view>
+      <view class="content">裁判组A组</view>
+    </view>
+    <view class="postBox">
+      <view class="group">岗位</view>
+      <view class="content">负责人</view>
+    </view>
+    <view class="numberBox">
+      <view class="group">本组人数</view>
+      <view class="content">10人</view>
+      <view class="rollCall" catchtap="onRollCallClick" wx:if="{{ grade == '1' }}">点名</view>
+    </view>
+    <view class="gradeLeaderBox" wx:if="{{ grade == '0' }}">
+      <view class="group">本组负责人</view>
+      <view class="content">许大徐大</view> 
+    </view>
+    <!-- 0.普通， 1.负责人 -->
+  </view>
+<!-- 2.middleBox -->
+  <view class="middleBox" wx:if="{{ grade == '1' }}">
+    <view class="leaderBox" catchtap="onLeaderClick">
+      <view class="type">负责人考核</view>
+      <view class="status">已通过</view>
+    </view>
+    <view class="memberBox" catchtap="onMemberClick">
+      <view class="type">成员考核情况</view>
+      <view class="status">待完成</view>
+    </view>
+    <view class="tasksBox" catchtap="onTaskClick">
+      <view class="type">分配任务</view>
+      <view class="status">待完成</view>
+    </view>
+    <view class="teamNoBox" catchtap="onTeamNoClick">
+      <view class="type">组员考评</view>
+      <view class="status">待完成</view>
+    </view>
+  </view>
+<!-- 3.bottomBox -->
+  <view class="bottomBox" wx:if="{{ grade == '1' }}">
+    <view class="directories" catchtap="onDirectoriesClick">负责人名录</view>
+    <view class="checkWork" catchtap="onCheckWorkClick">考勤情况</view>
+    <view class="report" catchtap="onReportClick">特殊情况报备</view>
+  </view>
+
+  <!-- 4.任务描述 -->
+  <view class="taskDescriptionBox" wx:if="{{ grade == '0' }}">
+    <view class="taskDescript">任务描述</view>
+    <textarea class="inputDescript"></textarea>
+  </view>
+</view>

@@ -1,0 +1,79 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/home/testDistribution/testDistribution", 
+    "pages/home/leaderName/leaderName", 
+    "pages/home/memberCheck/memberCheck", 
+    "pages/home/rollCall/rollCall", 
+    "pages/home/signIn/signIn", 
+    "pages/home/myTask/myTask", 
+    "pages/home/exchange/exchange", 
+    "pages/home/report/report", 
+    "pages/home/myInfor/myInfor",
+    "pages/home/leaderCheck/leaderCheck", 
+    "pages/hall/hall", 
+    "pages/signUp/signUp", 
+    "pages/assessment/assessment", 
+    "pages/mine/mine",
+    "pages/signUp/signUpDetail/signUpDetail",
+    "pages/assessment/confirm/confirm",
+    "pages/login/login",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#C0002A", 
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "志愿者"
+  },
+  "tabBar": {
+    "color": "#333333",   
+    "selectedColor": "#C0002A",  
+    "backgroundColor": "#fff",  
+    "borderStyle": "black",  
+    "position": "bottom", 
+    "custom": false,
+    "list": [
+      {
+        "selectedIconPath": "assets/tabbar/homeHig.png",
+        "iconPath": "assets/tabbar/homeNomal.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "assets/tabbar/signUpHig.png",
+        "iconPath": "assets/tabbar/signUpNomal.png",
+        "pagePath": "pages/signUp/signUp",
+        "text": "活动报名"
+      },
+      {
+        "selectedIconPath": "assets/tabbar/assessmentHig.png",
+        "iconPath": "assets/tabbar/assessmentNomal.png",
+        "pagePath": "pages/assessment/assessment",
+        "text": "技能考核"
+      },
+      {
+        "selectedIconPath": "assets/tabbar/hallHig.png",
+        "iconPath": "assets/tabbar/hallNomal.png",
+        "pagePath": "pages/hall/hall",
+        "text": "大厅"
+      },
+      {
+        "selectedIconPath": "assets/tabbar/myselfHig.png",
+        "iconPath": "assets/tabbar/myselfNomal.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }, 
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }, 
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": { 
+    "weui": true
+  }
+}

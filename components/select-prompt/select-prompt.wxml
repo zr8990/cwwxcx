@@ -1,0 +1,31 @@
+<!-- <van-dialog class="van-dialog__button" use-slot title="标记意向" show="{{ isShow }}" show-cancel-button showConfirmButton
+  confirm-button-color="#1296db" bind:close="onClose" bind:confirm="onSureClick">
+  
+  <view class="container"> 
+    <view class="itemBox">
+      <view class="item" wx:for="{{ list }}" wx:key="index">
+        <icon class="select" type="{{ (index == tag) ? 'success' : 'circle' }}"
+          color="{{ (index == tag) ? '#1296db' : '#C9C9C9' }}" catchtap="onSelctClick" data-index="{{index}}"></icon>
+
+        <view class="selectContent">{{ item }}</view>
+      </view>
+    </view>
+  </view>
+
+</van-dialog> -->
+
+
+<mp-dialog title="标记意向" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+
+  <view class="container">
+    <view class="itemBox">
+      <view class="item" wx:for="{{ list }}" wx:key="index">
+        <icon class="select" type="{{ (index == tag) ? 'success' : 'circle' }}"
+          color="{{ (index == tag) ? '#1296db' : '#C9C9C9' }}" catchtap="onSelctClick" data-index="{{index}}"></icon>
+
+        <view class="selectContent">{{ item }}</view>
+      </view>
+    </view>
+  </view>
+
+</mp-dialog>

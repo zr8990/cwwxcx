@@ -1,0 +1,26 @@
+<!--pages/home/memberCheck/memberCheck.wxml-->
+<view class="container">
+
+  <view class="mark">组别：裁判A组</view>
+
+  <view class="nameBox">
+
+    <view class="head">
+      <view class="th" wx:for="{{ heads }}" wx:for-index="idx" wx:for-item="cell" wx:key="idx">{{ cell }}</view>
+    </view>
+
+    <view class="tr">
+      <view class="name">
+        <view class="td" wx:for="{{ names }}" wx:for-index="idx" wx:for-item="cell" wx:key="idx">
+          {{ names[idx] }}</view>
+      </view>
+      <view class="status">
+        <view class="td" wx:for="{{ status }}" wx:for-index="idx" wx:for-item="cell" wx:key="idx">
+          {{ status[idx] }}</view>
+      </view>
+
+    </view>
+
+  </view>
+
+</view>

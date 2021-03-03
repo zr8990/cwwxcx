@@ -1,0 +1,36 @@
+/* pages/home/report/report.wxss */ 
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0rpx 0rpx;
+  background-color: #F7F7F7;
+  font-size: 26rpx;
+  font-weight: 450;
+}  
+/* <!-- 任务描述 --> */
+.taskDescriptionBox { 
+  width: 85%; 
+  margin: 30rpx 0rpx;
+} 
+.taskDescriptionBox .inputDescript {
+  background-color: white; 
+  border: 1rpx solid grey;
+  width: 96%;
+  height: 400rpx;
+  margin: 20rpx 0rpx;
+  padding: 10rpx 10rpx;
+}  
+.sureButton {
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  border-radius: 10rpx;
+  background-color: #C0002A;
+  width: 30%;
+  color: white;
+  text-align: center;
+  padding: 10rpx 20rpx;
+}

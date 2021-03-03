@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "van-icon": "/miniprogram_npm/@vant/weapp/icon/index",
+    "van-dropdown-menu":"/miniprogram_npm/@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item":"/miniprogram_npm/@vant/weapp/dropdown-item/index"
+  },
+  "navigationBarBackgroundColor": "#C0002A",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "活动报名",
+  "backgroundColor": "#fff",
+  "backgroundTextStyle": "light"
+}

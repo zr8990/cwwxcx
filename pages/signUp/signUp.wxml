@@ -1,0 +1,17 @@
+<!--pages/signUp/signUp.wxml-->
+<view class="container">
+  <view class="cellBox" wx:for="{{ list }}" wx:key="index">
+    <image class="image" src="{{ item.img }}" mode="widthFix"></image>
+    <view class="textBox">
+      <view class="title">{{ item.title }}</view>
+
+      <view class="button" wx:if="{{ item.status == '1' }}" style="background-color:#C0002A" data-btindex="{{ index }}" bindtap="sinUpButtonClick">{{ item.statusText }}
+      </view>
+      <view class="button" wx:if="{{ item.status == '2' }}" style="background-color:#8B3F57" data-btindex="{{ index }}" bindtap="sinUpButtonClick">{{ item.statusText }}
+      </view>
+      <view class="button" wx:if="{{ item.status == '3' || item.status == '4' }}" style="background-color:#9D9D9D" data-btindex="{{ index }}" bindtap="sinUpButtonClick">
+        {{ item.statusText }}</view>
+
+    </view>
+  </view>
+</view>

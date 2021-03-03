@@ -1,0 +1,11 @@
+<!--pages/home/leaderCheck/leaderCheck.wxml-->
+<view class="container">
+  <view class="box">
+    <view class="title">提示</view>
+    <view class="content">{{ content[type] }}</view>
+    <view class="btBox">
+      <view class="sureBt" catchtap="onConfirmClick">是</view>
+      <view class="cancleBt" catchtap="onCancleClick">否</view>
+    </view>
+  </view>
+</view>

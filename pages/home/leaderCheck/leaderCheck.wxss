@@ -1,0 +1,58 @@
+/* pages/home/leaderCheck/leaderCheck.wxss */
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0rpx 0rpx;
+  background-color: #F7F7F7;
+  font-size: 28rpx;
+  font-weight: 400;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 70%;
+  border-radius: 10rpx;
+  border: 8rpx solid #CC3454;
+  margin: 50rpx 0rpx;
+}
+
+.box .title {
+  color: #C0002A;
+  font-size: 50rpx;
+  font-weight: 900;
+  text-align: center;
+  margin: 30rpx 40rpx 0rpx 40rpx;
+}
+
+.box .content {
+  text-align: left;
+  margin: 20rpx 40rpx;
+}
+
+.box .btBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 30rpx 30rpx;
+}
+
+.btBox .sureBt,
+.cancleBt {
+  background-color: #C0002A;
+  padding: 10rpx 70rpx;
+  margin: 20rpx 30rpx;
+  font-size: 30rpx;
+  font-weight: 800;
+  color: white;
+  border-radius: 8rpx;
+}

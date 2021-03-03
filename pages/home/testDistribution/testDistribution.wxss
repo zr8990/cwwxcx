@@ -1,0 +1,86 @@
+/* pages/home/testDistribution/testDistribution.wxss */
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0rpx 0rpx;
+  background-color: #ffffff;
+  font-size: 28rpx;
+  font-weight: 400;
+}
+
+.mark,
+.confirm {
+  color: white;
+  background-color: #C0002A;
+  padding: 16rpx 26rpx;
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: 600;
+  margin-top: 50rpx;
+  min-width: 160rpx;
+}
+
+.confirm {
+  border-radius: 8rpx;
+}
+
+.nameBox {
+  border: 4rpx solid black;
+  margin-top: 60rpx;
+}
+
+.nameBox .head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: #DDA1A2;
+}
+
+.nameBox .tr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.nameBox .name,
+.task,
+.grade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.nameBox .td,
+.th {
+  width: 160rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border: 0.1rpx solid black;
+  text-align: center;
+  padding: 10rpx 10rpx;
+}
+
+.nameBox .wid {
+  width: 300rpx;
+}
+
+.nameBox .head .th:last-child {
+  width: 300rpx;
+}
+
+.nameBox .selectbutton {
+  width: 280rpx;
+  height: 60rpx;
+  color: yellow;
+  background-color: transparent;
+}

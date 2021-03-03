@@ -1,0 +1,128 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rpx 0rpx;
+  box-sizing: border-box;
+  background-color: white;
+  font-size: 26rpx;
+  font-weight: 450;
+}
+
+.headerBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.headerBox .title {
+  margin: 20rpx 30rpx;
+}
+
+.headerBox .image {
+  width: 80%;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.headerBox .introduceBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.headerBox .introduce {
+  padding: 10rpx 20rpx;
+  border-radius: 10rpx;
+  background-color: #C0002A;
+  color: white;
+  text-align: center;
+  margin-left: 40rpx;
+  margin-top: 30rpx;
+}
+
+.headerBox .introduceContent {
+  margin: 20rpx 40rpx;
+}
+
+.selectSectionBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin: 20rpx 30rpx;
+  width: 100%;
+}
+
+.selectSectionBox .tips {
+  margin-left: 40rpx;
+  padding: 10rpx 20rpx;
+  border-radius: 10rpx;
+  background-color: #C0002A;
+  color: white;
+}
+
+.selectSectionBox .selectbutton {
+  /* padding: 0rpx 20rpx; */
+  /* border: 1rpx solid #626262; */
+  margin-left: 30rpx;
+  color: #626262;
+}
+
+.cellsBox {
+  margin: 20rpx 40rpx;
+  width: 100%;
+}
+
+.cellsBox .title {
+  font-size: 26rpx;
+  font-weight: 450;
+  margin: 20rpx 40rpx;
+}
+
+.cellsBox .cellItemsBox {
+  color: grey;  
+}
+
+.cellsBox .cellInput {
+  margin: 20rpx 15%;
+  border-bottom: 1rpx solid #626262;
+}
+
+.cellsBox .cellItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  color: #626262;
+  font-size: 26rpx;
+  font-weight: 450;
+  padding-left: 80rpx;
+}
+.cellsBox .cellItem .icon {
+  margin-left: 30rpx;
+}
+.cellsBox .cellItem .content {
+  margin: 20rpx 20rpx;
+}
+
+.sureButton {
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  border-radius: 10rpx;
+  background-color: #C0002A;
+  width: 30%;
+  color: white;
+  text-align: center;
+  padding: 10rpx 20rpx;
+}

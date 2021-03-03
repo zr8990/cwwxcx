@@ -1,0 +1,56 @@
+<!--pages/home/myInfor/myInfor.wxml-->
+<view class="container">
+  <!-- iconBox -->
+  <view class="iconBox" catchtap="onClickIcon">
+    <view wx:if="{{ !haveUpIcon }}" class="up">
+      <view class="tip">上传头像</view>
+      <view class="addIcon">+</view>
+    </view>
+    <image wx:if="{{ haveUpIcon }}" class="icon"></image>
+  </view>
+  <!-- inforBox -->
+  <view class="inforBox">
+    <view class="leftInforBox">
+      <input class="name" disabled="true" value="姓 名："></input>
+      <input class="birthday" disabled="true" value="出生日期："></input>
+      <input class="IDCard" disabled="true" value="身份证号："></input>
+      <input class="occupation" disabled="true" value="职 业："></input>
+      <input class="school" disabled="true" value="学校/单位："></input>
+      <input class="tel" disabled="true" value="联系电话："></input>
+      <input class="wechat" disabled="true" value="微 信 号："></input>
+      <input class="introduce" disabled="true" value="个人简介："></input>
+    </view>
+    <view class="rightInforbox">
+      <input class="nameInput" placeholder="请输入..."></input>
+      <input class="birthdayInput" placeholder="请输入..."></input>
+      <input class="IDCardInput" placeholder="请输入..."></input>
+      <input class="occupationInput" placeholder="请输入..."></input>
+      <input class="schoolInput" placeholder="请输入..."></input>
+      <input class="telInput" placeholder="请输入..."></input>
+      <input class="wechatInput" placeholder="请输入..."></input>
+      <input class="introduceInput" placeholder="请输入..."></input>
+    </view>
+  </view>
+  <!-- picUpBox -->
+  <view class="picUpBox">
+    <view class="studentCardBox" catchtap="onClickStudentCard">
+      <view class="idUnUp" wx:if="{{ !haveUpStudentIDCard }}" >
+        <view class="add">+</view>
+        <view class="studentTip">学生证上传</view>
+      </view>
+      <view wx:if="{{ haveUpStudentIDCard }}" class="IDUp"></view>
+    </view>
+    <view class="resumeBox" catchtap="onClickResume">
+      <view wx:if="{{ !haveUpResume }}" class="resumeUnUp">
+        <view class="add">+</view>
+        <view class="resumeTip">电子简历上传</view>
+      </view>
+      <view wx:if="{{ haveUpResume }}" class="resumeUp"></view>
+    </view>
+  </view>
+  <!-- confirmBox -->
+  <view class="confirmBox">
+    <view class="confirm" catchtap="onClickConfirm">确认提交</view>
+  </view>
+
+</view>

@@ -1,0 +1,9 @@
+{
+  "usingComponents": { 
+  },
+  "navigationBarBackgroundColor": "#C0002A",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "负责人考核",
+  "backgroundColor": "#fff",
+  "backgroundTextStyle": "light"
+}

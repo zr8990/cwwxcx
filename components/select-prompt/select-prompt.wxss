@@ -1,0 +1,52 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0rpx 0rpx;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  font-size: 26rpx;
+  font-weight: 450;
+}
+
+/* .van-dialog__button {
+  width: 50% !important;
+} */
+/* .van-dialog__button {
+  width: 70%;
+} */
+
+.itemBox {
+  height: 100%;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+}
+
+.itemBox .item {
+  height: 60rpx;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.item .select {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.item .selectContent {
+  margin-left: 20rpx;
+  text-align: left;
+}

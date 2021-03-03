@@ -1,0 +1,43 @@
+<!--pages/home/testDistribution/testDistribution.wxml-->
+<view class="container">
+
+  <view class="mark">组别：裁判A组</view>
+
+  <view class="nameBox">
+
+    <view class="head">
+      <view class="th" wx:for="{{ heads }}" wx:for-index="idx" wx:for-item="cell" wx:key="idx">{{ cell }}</view>
+    </view>
+
+    <view class="tr">
+      <view class="name">
+        <view class="td" wx:for="{{ names.length }}" wx:for-index="idx" wx:for-item="cell" wx:key="idx">
+          {{ names[idx].name }}</view>
+      </view>
+      <view class="task" wx:if="{{ type == 0 }}">
+        <view class="td wid" wx:for="{{ names.length }}" wx:for-index="idx" wx:for-item="cell" wx:key="idx">
+          
+          <van-dropdown-menu class="selectbutton">
+            <van-dropdown-item value="{{ 0 }}" bind:change="valChange" options="{{ task }}" />
+          </van-dropdown-menu>
+        </view>
+
+      </view>
+
+      <view class="grade" wx:if="{{ type == 1 }}">
+        <view class="td wid" wx:for="{{ names.length }}" wx:for-index="idx" wx:for-item="cell" wx:key="idx"> 
+
+          <van-dropdown-menu class="selectbutton">
+            <van-dropdown-item value="{{ 0 }}" bind:change="valChange" options="{{ grade }}" />
+          </van-dropdown-menu>
+
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+
+  <view class="confirm" catchtap="onConfirmClick">提交</view>
+
+</view>

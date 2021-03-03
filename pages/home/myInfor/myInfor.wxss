@@ -1,0 +1,210 @@
+/* pages/home/myInfor/myInfor.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 0rpx 0rpx;
+  height: 100%;
+  font-size: 26rpx;
+  font-weight: 450;
+  color: #626262;
+}
+
+/* 1.iconBox */
+.iconBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 94%;
+  margin: 20rpx 20rpx;
+}
+
+.iconBox .up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%; 
+  margin-top: 20rpx;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 80rpx;
+  border: 1rpx solid darkgrey;
+} 
+.iconBox .tip {
+  line-height: 40rpx;
+  text-align: center;
+} 
+.iconBox .addIcon {
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 60rpx; 
+  font-weight: 300;
+  color: #D04060;
+}
+
+.iconBox .icon {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 80rpx;
+  border: 1rpx solid darkgrey;
+}
+
+/* 2.inforBox */
+.inforBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 94%;
+  margin: 20rpx 20rpx;
+
+}
+
+.inforBox .leftInforBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  width: 30%; 
+  margin-left: 20rpx;
+}
+
+.inforBox .leftInforBox .name,
+.birthday,
+.IDCard,
+.occupation,
+.school,
+.tel,
+.wechat,
+.introduce {
+  margin-top: 10rpx;
+  width: 100%;
+  text-align: left; 
+  height: 40rpx;
+}
+
+.inforBox .rightInforbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  width: 70%;
+  margin-right: 20rpx;
+}
+
+.inforBox .rightInforbox .nameInput,
+.birthdayInput,
+.IDCardInput,
+.occupationInput,
+.schoolInput,
+.telInput,
+.wechatInput,
+.introduceInput {
+  width: 100%;
+  margin-top: 10rpx;
+  padding-right: 20rpx;
+  margin-right: 20rpx;
+  border-bottom: 1rpx solid darkgrey;
+  height: 40rpx;
+}
+
+/* 3.picUpBox */
+.picUpBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 94%;
+  margin: 20rpx 20rpx; 
+}
+
+/* 3.1 */
+.picUpBox .studentCardBox {
+  margin-right: 30rpx;
+}
+
+.picUpBox .studentCardBox .idUnUp {
+  width: 240rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid darkgrey;
+} 
+.studentCardBox .idUnUp .studentTip {
+  line-height: 70rpx;
+  text-align: center;
+}
+.studentCardBox .idUnUp .add {
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 50rpx; 
+  font-weight: 300;
+  color: #D04060;
+}  
+.picUpBox .studentCardBox .IDUp {
+  width: 240rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid darkgrey; 
+}
+
+/* 3.2 */
+.picUpBox .resumeBox {
+  margin-left: 30rpx;
+
+} 
+.picUpBox .resumeBox .resumeUnUp {
+  width: 240rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid darkgrey;
+} 
+.resumeBox .resumeUnUp .resumeTip {
+  line-height: 70rpx;
+  text-align: center;
+}
+.resumeBox .resumeUnUp .add {
+  line-height: 80rpx;
+  text-align: center;
+  font-weight: 300;
+  font-size: 50rpx; 
+  color: #D04060;
+}  
+.picUpBox .resumeBox .resumeUp {
+  width: 240rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid darkgrey; 
+}
+
+/* confirmBox */
+.confirmBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 94%;
+  margin: 30rpx 20rpx;
+}
+
+.confirmBox .confirm {
+  margin-top: 20rpx;
+  background-color: #C0002A;
+  border-radius: 10rpx;
+  color: white;
+  padding: 15rpx 15rpx;
+  text-align: center;
+  font-weight: 600;
+  max-width: 50%;
+}
